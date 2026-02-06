@@ -1,0 +1,48 @@
+[project]
+name = "data-engineering"
+version = "1.0.0"
+description = "Production-grade ETL pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    # Core
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    
+    # Data Processing
+    "pandas>=2.1.0",
+    "polars>=0.20.0",
+    "pyarrow>=14.0.0",
+    
+    # Database
+    "sqlalchemy>=2.0.0",
+    "asyncpg>=0.29.0",
+    
+    # Validation
+    "pandera>=0.17.0",
+    "great-expectations>=0.18.0",
+    
+    # Utilities
+    "structlog>=24.1.0",
+    "tenacity>=8.2.0",
+    "httpx>=0.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "mypy>=1.8.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
