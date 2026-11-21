@@ -1,5 +1,7 @@
 # 04_data_engineering
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 > Modular data engineering pipeline for extraction, transformation, validation, and loading across heterogeneous sources.
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
